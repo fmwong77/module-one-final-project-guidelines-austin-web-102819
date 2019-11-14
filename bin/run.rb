@@ -116,7 +116,7 @@ def show_diet_preference(user)
             user.diet_preference = "vegetarian"
             puts_to_screen("You selected 1. Vegetarian")
         when "2"
-            user.diet_preference = "non-vegetarian"
+            user.diet_preference = "nonvegetarian"
             puts_to_screen("You selected 2. Non-Vegetarian")
         else
             puts_to_screen("Invalid input")
