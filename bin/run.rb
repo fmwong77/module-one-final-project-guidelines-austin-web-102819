@@ -3,8 +3,6 @@ require 'rest-client'
 require 'json'
 require_relative '../config/environment'
 
-# require "catpix"
-
 RECIPE_API_URL = "https://api.spoonacular.com/recipes/random/?apiKey=99f8e9d43fb8450b981d1e9a3a659d50&number=1&tags=main%20course,"
 
 def run
@@ -86,13 +84,6 @@ def display_meal(user)
             puts_to_screen("Goodbye!")
         end
     end
-    # Catpix::print_image "pokemon.png",
-    # :limit_x => 1.0,
-    # :limit_y => 0,
-    # :center_x => true,
-    # :center_y => true,
-    # :bg => "white",
-    # :bg_fill => true
 end
 
 def get_existing_meal(user)
@@ -104,7 +95,9 @@ def delete_existing_meal(user)
 end
 
 def show_diet_preference(user)
-    puts_to_screen("Your diet preference is #{user.diet_preference}. Do you want to change it? (YES/NO)")
+
+    diet_preference = user.diet_preference == "nonvegetarian" ? "Non-Vegetarian" : user.diet_preference.capitalize
+    puts_to_screen("Your diet preference is #{diet_preference}. Do you want to change it? (YES/NO)")
     user_input_for_diet_preference = get_user_input()
 
     case user_input_for_diet_preference.downcase
@@ -137,8 +130,9 @@ end
 
 def make_request(test_url, user)
     response = RestClient.get(test_url)
+    # binding.pry
     parsed_response = JSON(response)
-    
+    # puts parsed_response["recipes"][0]["vegetarian"]
     ingredient_array = parsed_response["recipes"][0]["extendedIngredients"]  
     recipe_name = parsed_response["recipes"][0]["title"]
     cost_per_serving = parsed_response["recipes"][0]["pricePerServing"] 
