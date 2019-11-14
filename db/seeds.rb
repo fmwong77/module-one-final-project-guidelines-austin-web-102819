@@ -1,6 +1,9 @@
 User.destroy_all
+<<<<<<< HEAD
 Meal.destroy_all
 Recipe.destroy_all
+=======
+>>>>>>> e94826a50cc28348708458a53e38e055467ed4d5
 faith = User.create(first_name: "faith", diet_preference: "vegetarian")
 mei = User.create(first_name: "mei", diet_preference: "vegetarian")
 brittney = User.create(first_name: "brittney", diet_preference: "vegetarian")
