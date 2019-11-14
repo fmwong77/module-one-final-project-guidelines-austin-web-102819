@@ -7,7 +7,7 @@ For your final project, we'll be building a Command Line database application.
 ## Project Requirements
 
 ![Epicure flowchart](Epicure.jpg)
-![Epicure flowchart](Epicure1.jpg)
+![Epicure flowchart](Epicure_1.jpg)
 
 ### Option One - Data Analytics Project
 
