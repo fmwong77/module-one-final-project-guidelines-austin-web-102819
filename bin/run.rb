@@ -32,9 +32,9 @@ def user_login(logged_in_user)
         user_input = get_user_input()
 
         case user_input.downcase
-        when "yes"
+        when "yes", "y"
             # meal = get_existing_meal(user)
-        when "no"
+        when "no", "n"
             # get and delete current meal and find new meal
             meal = get_existing_meal(user)
             delete_existing_meal(user)
