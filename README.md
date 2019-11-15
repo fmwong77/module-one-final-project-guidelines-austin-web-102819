@@ -10,7 +10,7 @@
 
 ![Epicure flowchart](Epicure.jpg)
 
-### OBJECTIVES
+### TECHNICAL OBJECTIVES
 
 1. Access a Sqlite3 Database using ActiveRecord.
 2. You should have at minimum three models including one join model. This means you must have a many-to-many relationship.
