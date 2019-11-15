@@ -40,6 +40,7 @@ If you don't have ruby installed, you'll have to get that up and running in your
 bundle install
 
 5.) To open application type this command in your terminal:
+
 cd bin
 
 ruby run.rb
