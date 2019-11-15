@@ -41,6 +41,7 @@ bundle install
 
 5.) To open application type this command in your terminal:
 cd bin
+
 ruby run.rb
 
 5.) It will then prompt you to enter your first name.  See flowchart if need further instructions. 
