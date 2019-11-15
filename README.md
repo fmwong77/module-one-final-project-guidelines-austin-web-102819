@@ -8,7 +8,7 @@
 * As a user, I want to be able to generate another random meal based on dietary preference. This will delete my old meal and 
  save the meal I choose, then exit out of CLI application.  
 
-![Epicure flowchart](Epicure.jpg)
+![Epicure flowchart](Epicure_2.jpg)
 
 ### TECHNICAL OBJECTIVES
 
