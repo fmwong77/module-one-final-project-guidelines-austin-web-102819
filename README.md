@@ -40,8 +40,8 @@ If you don't have ruby installed, you'll have to get that up and running in your
 bundle install
 
 5.) To open application type this command in your terminal:
-
-ruby bin/run.rb
+cd bin
+ruby run.rb
 
 5.) It will then prompt you to enter your first name.  See flowchart if need further instructions. 
 
